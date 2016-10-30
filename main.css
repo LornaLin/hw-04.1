@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Microsoft JhengHei;
+}
+.nav>li{
+    display: inline-block;
+    position: relative;
+    border: 1px solid #ddd;
+    border-right: 0;
+    padding: 0.5em 1em;
+    margin-left: -5px; /* 讓沙發椅桌接起來 */
+    width: 25%;
+    cursor: pointer;  /* 讓滑鼠變成手指 */
+}
+
+.nav>li:last-child{
+    border-right: 1px solid #ddd;
+}
+
+.submenu{
+    width: 190px;
+    padding: 0px;
+    position: absolute;
+    left:-1px;
+    top:100%;
+    background: #fff;
+    list-style-type: none; /* 讓li ul的點點消失 */
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    display: none;
+}
+
+.nav>li:hover  .submenu{  /* 讓滑鼠滑過的時候出現選單 */
+    display: block;
+}
+
+.submenu li{
+    padding: 0.5em 15px;
+}
+
+.submenu li:hover {
+    background: white;
+    color: gray;
+}
